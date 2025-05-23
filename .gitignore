@@ -1,0 +1,22 @@
+# IDE specific files
+.idea/
+.vscode/
+
+# Build directories
+cmake-build-*/
+build/
+
+# Object files
+*.o
+
+# Libraries
+*.lib
+*.a
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug files
+*.dSYM/
