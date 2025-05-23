@@ -8,14 +8,62 @@ void addition() {
     printf("Calculadora Simples - ADIÇÃO\n");
     printf("============================\n");
 
-    int n1, n2;
+    float n1, n2;
     printf("Digite o primeiro número: ");
-    scanf("%d", &n1);
+    scanf("%f", &n1);
     printf("Digite o segundo número: ");
-    scanf("%d", &n2);
+    scanf("%f", &n2);
 
     printf("\n");
-    printf("O resultado é: %d\n", n1 + n2);
+    printf("O resultado é: %f\n", n1 + n2);
+}
+
+void subtraction() {
+    printf("\n");
+    printf("===============================\n");
+    printf("Calculadora Simples - SUBTRAÇÃO\n");
+    printf("===============================\n");
+
+    float n1, n2;
+    printf("Digite o primeiro número: ");
+    scanf("%f", &n1);
+    printf("Digite o segundo número: ");
+    scanf("%f", &n2);
+
+    printf("\n");
+    printf("O resultado é: %f\n", n1 - n2);
+}
+
+void multiplication() {
+    printf("\n");
+    printf("===================================\n");
+    printf("Calculadora Simples - MULTIPLICAÇÃO\n");
+    printf("===================================\n");
+
+    float n1, n2;
+    printf("Digite o primeiro número: ");
+    scanf("%f", &n1);
+    printf("Digite o segundo número: ");
+    scanf("%f", &n2);
+
+    printf("\n");
+    printf("O resultado é: %f\n", n1 * n2);
+}
+
+void division() {
+    printf("\n");
+    printf("=============================\n");
+    printf("Calculadora Simples - DIVISÃO\n");
+    printf("=============================\n");
+
+    float n1, n2;
+    printf("Digite o primeiro número: ");
+    scanf("%f", &n1);
+    printf("Digite o segundo número: ");
+    scanf("%f", &n2);
+
+    printf("\n");
+    printf("O resultado é: %f\n", n1 / n2);
 }
 
 void menu() {
@@ -38,9 +86,9 @@ void menu() {
         printf("\n");
         switch (option) {
             case 1: addition(); break;
-            case 2: /*subtraction()*/; break;
-            case 3: /*multiplication()*/; break;
-            case 4: /*division()*/; break;
+            case 2: subtraction(); break;
+            case 3: multiplication(); break;
+            case 4: division(); break;
             case 0: exiting = 1; break;
             default: printf("'%d' não é uma opção!\n", option); break;
         }
